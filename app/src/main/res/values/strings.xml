@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Health Salud</string>
+
+    <string-array name="tipo_personas">
+        <item>Masculino</item>
+        <item>Femenino</item>
+        <item>NS/NC</item>
+    </string-array>
+
+    <string-array name="meses">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+
+
+    <string-array name="horas">
+        <item>10:00-11:00</item>
+        <item>11:00-12:00</item>
+        <item>12:00-13:00</item>
+        <item>13:00-14:00</item>
+    </string-array>
+
+
+
+    <string name="ed_user">Nombre de usuario</string>
+    <string name="et_password">Contraseña</string>
+    <string name="btn_login">Iniciar sesión</string>
+    <string name="btn_registro">Registrarse</string>
+    <string name="tv_id">Id de usuario:</string>
+    <string name="tv_apellido">Apellidos:</string>
+    <string name="tv_nombre">Nombres:</string>
+    <string name="tv_username">Nombre de usuario:</string>
+    <string name="tv_password">Contraseña:</string>
+    <string name="tv_userfecha">Fecha de nacimiento</string>
+    <string name="Error">Error</string>
+</resources>

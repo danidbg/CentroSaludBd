@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#4EB1ED"
+    tools:context="com.example.centrosaludbd.Registro">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="Registro"
+                android:textColor="@color/white"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <EditText
+                    android:id="@+id/iNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:hint="Nombre"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/iApellidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:hint="Apellidos"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <EditText
+                    android:id="@+id/iDni"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:hint="DNI"
+                    android:inputType="text"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <EditText
+                    android:id="@+id/iDd"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="39"
+                    android:gravity="center"
+                    android:hint="dd"
+                    android:inputType="date"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/iMes"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="27"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/iYy"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="33"
+                    android:gravity="center"
+                    android:hint="yyyy"
+                    android:inputType="date"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+
+                <Spinner
+                    android:id="@+id/iSexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="50"
+                    android:spinnerMode="dropdown" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <EditText
+                    android:id="@+id/iCiudad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:hint="Ciudad"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/iCP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:hint="CP"
+                    android:inputType="number"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/iNT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:hint="Numero Telefono"
+                android:inputType="phone"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/iContraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:hint="Contraseña"
+                android:password="true"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/bg_button"
+                android:hint="@string/btn_registro"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="25sp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

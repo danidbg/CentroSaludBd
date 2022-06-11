@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondomenu"
+    tools:context=".Menu" >
+
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Menu"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/iCita_telematica"
+        android:layout_width="148dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="168dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/citatelematica" />
+
+    <ImageView
+        android:id="@+id/iMedicina_General"
+        android:layout_width="148dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="168dp"
+        app:layout_constraintStart_toEndOf="@+id/iCita_telematica"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/medicinageneral" />
+
+    <ImageView
+        android:id="@+id/iDentista"
+        android:layout_width="148dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iCita_telematica"
+        app:srcCompat="@drawable/dentista" />
+
+    <ImageView
+        android:id="@+id/iUrgencias"
+        android:layout_width="148dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toEndOf="@+id/iDentista"
+        app:layout_constraintTop_toBottomOf="@+id/iMedicina_General"
+        app:srcCompat="@drawable/urgencias" />
+</androidx.constraintlayout.widget.ConstraintLayout>
